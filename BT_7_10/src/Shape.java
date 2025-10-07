@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Shape {
+public abstract class Shape {
     private Point centerPoint;
     private static int count = 0;
 
@@ -33,9 +33,7 @@ public class Shape {
     /**
      * get perimeter.
      */
-    public double getPerimeter() {
-        return 0;
-    }
+    public abstract double getPerimeter();
 
     public abstract String getName();
 
